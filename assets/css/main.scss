@@ -1,0 +1,78 @@
+// Variables
+$background-color: #04050a;
+$text-color: #ebeaf7;
+$card-bg-color: #1a1c29;
+$caption-bg-color: #121417;
+$highlight-color: #f5a623;
+$shadow-color: rgba(0, 0, 0, 0.2);
+
+// Base Styles
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: $background-color;
+  color: $text-color;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+// Headings
+h1,
+h2,
+h3 {
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+// Card Info Section
+.card-info {
+  background: $card-bg-color;
+  figure {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin: 0;
+    .imgHolder {
+      padding: 2rem 0;
+      img {
+        width: 30%;
+        margin: auto;
+        display: block;
+      }
+    }
+
+    figcaption {
+      padding: 2rem;
+      background: $caption-bg-color;
+      border-bottom: #ebeaf7 1px solid;
+
+      h1 {
+        margin: 0;
+      }
+
+      .healthPoints {
+        font-size: 1rem;
+        color: #d0d0d0;
+        margin-bottom: 1rem;
+      }
+
+      .attack {
+        font-size: 0.9rem;
+        color: #d0d0d0;
+
+        .attackInfo {
+          margin-bottom: 1rem;
+
+          h2 {
+            margin: 0;
+            font-size: 1.1rem;
+            color: $highlight-color;
+          }
+
+          p {
+            margin: 0.5rem 0;
+          }
+        }
+      }
+    }
+  }
+}
